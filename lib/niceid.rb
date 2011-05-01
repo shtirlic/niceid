@@ -2,10 +2,11 @@ module NiceId
   class Id
     VARS_NUM = %w{2 3 4 5 6 7 8 9}
     VARS_LET = %w{f j k m p s t v w x y z}
+    DEFAULT_SIZE = 3
 
     attr_accessor :key
 
-    def initialize(how_many = 3)
+    def initialize(how_many = DEFAULT_SIZE)
       @key = ''
       @summ = 0
       how_many.times do

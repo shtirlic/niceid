@@ -12,6 +12,9 @@ Gem::Specification.new do |s|
   s.summary     = %q{Nice ID Generator with checksum check.}
   s.description = %q{Simple to remember and safe for handwriting, letters and numbers based ID.}
 
+  s.add_development_dependency "rspec", "~> 2.3"
+  s.add_development_dependency "backports", ">= 2.0"
+
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
