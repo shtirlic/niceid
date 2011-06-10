@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Serg Podtynnyi"]
   s.email       = ["serg.podtynnyi@gmail.com"]
-  s.homepage    = "http://github.com/shtirlic/#{s.name}"
+  s.homepage    = "https://github.com/shtirlic/#{s.name}"
   s.summary     = %q{Nice ID Generator with checksum check.}
   s.description = %q{Simple to remember and safe for handwriting, letters and numbers based ID.}
 
