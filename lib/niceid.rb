@@ -4,8 +4,6 @@ module NiceId
     VARS_LET = %w{f j k m p s t v w x y z}
     DEFAULT_SIZE = 3
 
-    attr_accessor :key
-
     def initialize(how_many = DEFAULT_SIZE)
       @key = ''
       @summ = 0
@@ -19,10 +17,10 @@ module NiceId
     def to_s
       @key
     end
+    private
     def correct?
       @key[-1..-1] == calc
     end
-    private
     def calc
       @sum = @key.chop.scan(/./).map{|a| VARS_NUM.index(a)||VARS_LET.index(a)||0 }
       VARS_LET.at @sum.inject(:+) % VARS_LET.size
