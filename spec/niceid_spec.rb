@@ -18,8 +18,12 @@ describe NiceId::Id do
     @id.send(:correct?).should be_false
   end
 
+  it "should be uniq" do
+    @id.to_s.should_not eq described_class.new.to_s
+  end
+
   it "should genarate Id with custom size" do
-    described_class.new(7).to_s.length.should eq 7*2
+    described_class.new(7).to_s.length.should eq 7 * 2
   end
 
 end
