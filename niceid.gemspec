@@ -13,7 +13,6 @@ Gem::Specification.new do |s|
   s.description = %q{Simple to remember and safe for handwriting, letters and numbers based ID.}
 
   s.add_development_dependency "rspec", "~> 2.3"
-  s.add_development_dependency "backports", ">= 2.0"
   s.add_development_dependency "rake"
 
   s.executables = "niceid"
