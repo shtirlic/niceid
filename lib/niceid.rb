@@ -5,7 +5,8 @@ module NiceId
     DEFAULT_SIZE = 3
 
     def initialize(how_many = DEFAULT_SIZE)
-      @key = [].fill(0, how_many) { [VARS_NUM.sample,VARS_LET.sample] }
+      rand_method = [].respond_to?(:sample) ? :sample : :choice
+      @key = [].fill(0, how_many) { [VARS_NUM.send(rand_method),VARS_LET.send(rand_method)] }
       @key = @key.flatten.join
       @key = @key.chop + calc(@key)
     end
