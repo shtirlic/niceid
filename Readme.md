@@ -1,4 +1,4 @@
-NiceId ![Travis-ci](https://secure.travis-ci.org/shtirlic/niceid.png) [![Gem Version](https://badge.fury.io/rb/niceid.svg)](https://badge.fury.io/rb/niceid)
+NiceId [![Travis-ci](https://secure.travis-ci.org/shtirlic/niceid.png)](https://travis-ci.org/shtirlic/niceid) [![Gem Version](https://badge.fury.io/rb/niceid.svg)](https://badge.fury.io/rb/niceid)
 ==============
 
 Simple to remember and safe for handwriting, letters and numbers based ID.
