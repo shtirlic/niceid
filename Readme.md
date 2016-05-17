@@ -1,4 +1,4 @@
-NiceId ![Travis-ci](https://secure.travis-ci.org/shtirlic/niceid.png)
+NiceId ![Travis-ci](https://secure.travis-ci.org/shtirlic/niceid.png) [![Gem Version](https://badge.fury.io/rb/sinatra-jsonp.svg)](https://badge.fury.io/rb/sinatra-jsonp)
 ==============
 
 Simple to remember and safe for handwriting, letters and numbers based ID.
